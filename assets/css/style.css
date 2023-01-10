@@ -1,0 +1,723 @@
+/* Taille body */
+body {
+    width: 95%;
+    margin: auto;
+    
+}
+
+/*--------------------Debut header*---------------------*/
+
+header{
+    display :flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bloc-header{
+    
+    width: 30%;
+    
+}
+
+/* Logo afapa */
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* div Titre principal */
+#titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* icone parametre et cloche */
+#icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+/* Contenu titre principal */
+h1.titre-borne{
+    padding: 5px;
+    background-color: rgb(175, 44, 88);
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Div vide pour espace entre icones */
+p.vide{
+    opacity: 0;
+}
+
+/*-------------------Fin du header------------------*/
+
+
+/*-------------Debut formulaire coordonnées-----------*/
+
+/*Boite principale pour le formulaire*/
+section.coordonnee{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color:  #f2f2f2;
+}
+
+/* Titre principale */
+.titre-coordonnee{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 134, 38);
+    color: white;
+    width: 100%;
+}
+
+/* container pour le form */
+.container {
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    
+    box-shadow: 3px 3px rgba(175, 44, 88, 0.359), -1em 0 .4em  rgba(38, 134, 38, 0.408);
+    
+}
+
+/*inputs, select et textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* label */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    
+  }
+  
+  /* submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  
+  
+  /* Float colonne labels: 25% width */
+  .col-25 {
+    
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    
+  }
+  
+  /* Float colonne inputs: 75% width */
+  .col-75 {
+   
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+    
+  }
+  
+  /* Effacer le floats after les colonnes */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*-------------Fin formulaire coordonnées-----------*/
+
+
+/*-------------Début section préstation-------------*/
+
+/* Section principale */
+.prestation{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    width: 100%;
+    justify-content: center;
+    
+    
+    
+    
+}
+
+/* Titre principal section */
+.titre-presta{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 134, 38);
+    color: white;
+    width: 30%;
+    height: auto;
+    margin-top: 50px;
+}
+
+/* Boite qui regroupe les deux radio */
+.radio-general{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* titre des radio */
+h2.sous-titre-presta{
+    display: flex;
+    background-color: rgb(175, 44, 88);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.sous-titre-presta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+/* Boite parent des radio (même class pour les deux)*/
+.radiocontainer {
+    display: inline-grid;
+    grid-auto-flow: dense;
+    align-items: center;
+    cursor: pointer;
+    margin: 30px;
+  }
+
+  /* Radio 1 formation */
+  .radio-1{
+    display: flex;
+    flex-direction: column;  
+    width: 40%;
+    
+  }
+
+  /* Radio 2 formations */
+  .radio-2{
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+  }
+  
+/* Emplacement des puces radio */
+.radiocontainer label {
+    grid-column: 2;
+}
+
+/* classe btn Envoyer */
+.btn-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* btn envoyer */
+input[type=submit] {
+    
+    background-color: rgb(38, 134, 38);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10%;
+    font-size: 17px;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+  }
+
+  /*-------------Fin section préstation-------------*/
+
+
+  /*-------------Debut section détail préstation-------------*/
+
+  /* Section principale */
+  section.detail-presta{
+    background-color: #f2f2f2;
+      margin-top: 130px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+     
+  }
+
+  /* Titre principal */
+  .titre-detail-presta{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 134, 38);
+    color: white;
+    width: 100%;
+  }
+
+  /* sous titre orientation */
+  h2.soustitre-orientation{
+    background-color: rgb(175, 44, 88);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    
+  }
+
+  /* sous titre formation */
+  h2.soustitre-formation{
+    background-color: rgb(175, 44, 88);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    
+  }
+/* div regroupe les deux articles */
+  .grp-detail-presta{
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+
+
+/* div orientation */
+  .detail-orientation{
+    display: flex;
+    flex-direction: column;  
+    font-size: 18px;
+      width: 40%;
+      padding: 20px;
+      text-align:center;
+      background-color: #f2f2f20e;
+    align-items: center;
+  }
+
+  /* article orientation mise en forme */
+  article.txt-orientation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+  }
+
+  article.txt-formation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+  }
+
+  /* Div formation */
+  .detail-formation{
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+      width: 40%;
+      padding: 20px;
+      font-size: 17px;
+      background-color: #f2f2f2aa;
+      justify-content: center;
+      align-items: center;
+  }
+/*-------------Fin section détail préstation-------------*/
+
+/*-------------Debut section contact-------------*/
+
+/* Section principale */
+section.contact{
+    background-color: #f2f2f2;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/* Titre principal */
+
+/* Section principale contact */
+section.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.titre-contact{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 134, 38);
+    color: white;
+    width: 100%;
+}
+
+.coordonnee-grp{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.coordonnees{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 30%;
+height: auto;
+
+
+}
+
+p.coordonnees{
+    background-color: white;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+}
+
+.votre-contact{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 30%;
+height: auto;
+
+
+
+}
+
+p.contact-conseiller{
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    background-color: white;
+    width: 80%;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 30%;
+
+}
+
+h2.coordonnees{
+    background-color: rgb(175, 44, 88);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 43%;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.contact-conseiller{
+    background-color: rgb(175, 44, 88);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 43%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------Fin section contact-------------*/
+
+
+/*-------------Debut footer-------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #44131320;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 130px;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.lien-grp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.lien-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+.lien-footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+ul.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+ul.footer li{
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding:10px;
+
+}
+
+p.footer{
+    text-align: center;
+   
+}
+
+
+/*Mediaquery*/
+
+@media screen and (max-width:920px) {
+    
+ 
+
+    .bloc-header{
+     width: 65%;
+    }
+
+    header{
+    
+        justify-content: center;
+    }
+
+    #titre{
+        width: 100%;
+    }
+
+    #icone{
+        
+        justify-content: center;
+        
+    }
+
+    #logo {
+        
+        justify-content: center;
+        
+    }
+
+    .col-25, .col-75{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    input[type=submit]{
+          margin: 25px;
+          width: 100%;
+    }
+
+    header{
+          flex-wrap: wrap-reverse;
+    }
+
+    .titre-presta{
+        
+        width: 100%;
+    }
+ 
+    .radio-1{
+        
+        width: 100%;
+      }
+    
+    .radio-2{
+         
+          width: 100%;
+      }
+
+    h2.sous-titre-presta{
+        
+        width: 95%;
+       
+       
+    }  
+    
+      
+
+    .detail-orientation{
+      
+          width: 100%;
+       
+      }
+    
+    .detail-formation{
+    
+          width: 100%;
+        
+      }
+
+    h2.soustitre-orientation{
+        
+        width: 100%;
+   }
+    
+      
+    h2.soustitre-formation{
+      
+        width: 100%;
+        }
+
+    .coordonnees{
+        display: flex;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+             
+    }
+            
+   
+    .votre-contact{
+        margin-top: 40px;
+        width: 100%;
+            
+           
+    }
+
+    h2.coordonnees{
+               
+    width: 95%;
+               
+    }
+
+    p.coordonnees{
+        font-size: 32px;
+        width: 95%;
+    }
+            
+    h2.contact-conseiller{
+               
+    width: 95%;
+                
+    } 
+
+    p.contact-conseiller{
+        font-size: 32px;
+        width: 95%;
+    }
+            
+    .map{
+    margin-top: 40px;
+    width: 100%;
+    
+    }
+
+    iframe{
+    width: 100%;
+    }
+}
+
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/87360a353b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Borne-afpa</title>
+</head>
+<body>
+    <!--Début du header-->
+    <header>
+        <div class="bloc-header" id="logo">
+            <img src="./assets/images/logo_afpa.jpg" alt="logo-afpa">
+        </div>
+        
+        <div class="bloc-header" id="titre">
+            <h1 class="titre-borne">BIENVENUE A LA JOURNEE PORTES OUVERTES AFPA</h1>
+        </div>
+        
+        <div class="bloc-header" id="icone">
+            <i class="fa-solid fa-gear"></i>
+            <p class="vide">v</p>
+            <i class="fa-solid fa-bell"></i>
+        </div>
+
+    </header>
+    <!--fin du header-->
+
+    <main>
+        
+        <!--Début formulaire coordonnées-->
+        <section class="coordonnee">
+            <div class="titre-coordonnee">
+                <h2 class="coordonnee">AFIN D'ETRE CONTACTE PAR UN CONSEILLER AFPA, MERCI DE SAISIR VOS COORDONNEES</h2>
+            </div>
+
+            <div class="container">
+                <form action="#">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="nom">Nom de famille</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="nom" name="nom" placeholder="Votre Nom">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="prenom">Prénom</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="email">Votre adresse email</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="email" name="email" placeholder="Adresse email valide">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="adresse">Votre adresse postale</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="adresse" name="adresse" placeholder="3, rue du de la liberté">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="ville">Ville</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="ville" name="ville" placeholder="Votre ville">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="cp">Code postal</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="cp" name="cp" placeholder="Votre code postal">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="situation">Situation</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="situation" name="situation">
+                        <option value="demandeur">Demandeur d'emploi</option>
+                        <option value="pro">Professionnel</option>
+                        <option value="autre">Autre</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                    <div class="col-25">
+                      <label for="msg">Complément d'information (situation particulière)</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="msg" name="msg" placeholder="Message..." style="height:200px"></textarea>
+                    </div>
+                 
+                </form>
+              </div> 
+
+           
+        </section>
+        <!--Fin formulaire coordonnées-->
+
+        <!--Début section préstation-->
+  <section class="prestation">
+        <div class="titre-presta">
+            <h2 class="presta"> SELECTIONNEZ UNE PRESTATION </h2>
+        </div>
+        
+            <div class="radio-general">
+        
+              <div class="radio-1">
+                <div class="sous-titre-presta">        
+                  <h2 class="sous-titre-presta">Orientation</h2>
+                </div>
+                  
+                <span class="radiocontainer">      
+                      <input type="radio" id="choix" name="contact" value="text" >
+                      <label class="radiolabel" for="choix">Valoriser ses compétences</label>
+                        
+                      <input type="radio" id="choix1" name="contact" value="text">
+                      <label class="radiolabel" for="choix1">Se professionnaliser</label>
+                      
+                      <input type="radio" id="choix2" name="contact" value="text">
+                      <label class="radiolabel" for="choix2">Diagnostic d'entreprise</label>
+                      
+                            
+                      <input type="radio" id="choix3" name="contact" value="text">
+                      <label class="radiolabel" for="choix3">Etude des métiers</label>
+
+                      <input type="radio" id="choix4" name="contact" value="text">
+                      <label class="radiolabel" for="choix4">Accompagnement</label>
+                    </span>       
+              </div>
+
+              <div class="radio-2">
+                <div class="sous-titre-presta">  
+                  <h2 class="sous-titre-presta">Formations</h2>
+                </div>   
+                    <span class="radiocontainer">
+                      <input type="radio" id="choix5" name="contact" value="text">
+                      <label class="radiolabel" for="choix5">Métier de l'informatique</label>
+                            
+                      <input type="radio" id="choix6" name="contact" value="text">
+                      <label class="radiolabel" for="choix6">Métier de l'hotêllerie</label>
+                            
+                      <input type="radio" id="choix7" name="contact" value="text">
+                      <label class=" radiolabel" for="choix7">Métier du textile</label>
+                            
+                      <input type="radio" id="choix8" name="contact" value="text">
+                      <label class="radiolabel" for="choix8">Métier de la vente </label>
+                    </span>
+              </div>
+           
+          </div>
+        
+                <div class="btn-2">
+                  <input type="submit" value="Envoyer">
+                </div>
+  </section>
+        <!--fin séction préstation-->
+
+        <!--Debut section détail-prestation-->
+        <section class="detail-presta">
+            <div class="titre-detail-presta">
+                <h2 class="detail-presta">DETAILS DE NOS PRESTATIONS</h2>
+            </div>
+              <div class="grp-detail-presta"> 
+                <div class="detail-orientation">
+                  
+                  <article class="txt-orientation">
+                    <h2 class="soustitre-orientation">Orientation</h2> 
+                      <p class="orientation"><strong> -Pour valoriser votre capital compétences et optimiser vos ressources humaines</strong> <br>
+                      Nous réalisons le recrutement interne et externe, avec analyse de poste,
+                      le conseil à l'évolution de carrière, la conduite
+                      d'actions de développement personnel, les bilans de compétences.</p> <br> <br>
+                      <p class="orientation"></p><strong> -Pour professionnaliser vos acteurs </strong> <br>
+                      Nous développons les compétences d'encadrement et de communication
+                      en impulsant de nouvelles démarches enresssources humaines par
+                      l'animation d'équipes et la formation à l'entretien proffessionnel.
+                      <br> <br>
+                      <p class="orientation"><strong>-Pour accompagner l'évolution de vos organisations et anticiper les mutations industrielles </strong><br>
+                      Nous vous proposons le diagnostic d'entreprise, le conseil en formation, l'accompagnement au
+                      changement des salariés et les études prospectives des métiers et des emplois grâce à notre
+                      observatoire régional.</p>
+                      
+                  </article> 
+             </div>
+            
+              <div class="detail-formation">
+               
+                
+                  <article class="txt-formation">
+                    <h2 class="soustitre-formation">Formations</h2>
+                   
+                   <p class="formation"> <strong>-Un centre à la pointe de l’informatique </strong> <br>
+                    Grâce à l’importance des moyens et du savoir faire
+                    mis en œuvre, l’AFPA Créteil est aujourd’hui l’un
+                    des leaders dans le secteur de l’informatique. Nous
+                    développons des compétences couvrant l’ensemble
+                    des processus d’informatisation et de
+                    communication des entreprises. une veille
+                    technologique nous permet en outre d’être
+                    opérationnels à chaque grand défi. </p><br> <br>
+                    <p class="formation"><strong>-Une référence pour les métiers de l’hôtellerie </strong> <br>
+                    Parce que nous répondons aux exigences actuelles des métiers de l’hôtellerie et que nous
+                    sommes en relation permanente avec les entreprises du secteur, nos formations (employé
+                    polyvalent, gouvernante d’hôtel, réceptionniste, etc.) font référence auprès des
+                    professionnels.</p> <br> <br>
+                   <p class="formation"><strong>-Les formations de demain dans l’industrie du textile</strong>  <br>
+                    De la fabrication à la gestion de production en passant par l’entretien des textiles, notre
+                    centre prépare à des savoir­faire uniques en ile-­de-­France pour répondre aux futurs
+                    besoins des entreprises. L’AFPA Créteil bénéficie d’ailleurs d’une reconnaissance
+                    “d’expert” à l’échelon international.</p> <br> <br>
+                   <p class="formation"><strong> -Des méthodes éprouvées en vente et distribution</strong> <br>
+                    Aide à la mobilité interne, formation “complémentarisée” (principes et méthodes de
+                    vente, connaissance technique des produits) et valorisation du savoir­faire commercial
+                    par l’alternance, tels sont les atouts de notre secteur vente/distribution. <br> <br>
+                    <strong>-Un accompagnement sûr et performant</strong> <br>
+                    Notre système d’enseignement à distance forme une alternative originale pour le plan de
+                    perfectionnement et permet d’accompagner efficacement les évolutions de carrière en
+                    s’adaptant aux contraintes liées à la production.
+
+                </article>
+              </div>
+            </div>
+        </section>
+        <!--Fin de session détail-prestations-->
+
+        <!--Debut section contact-->
+        <section class="contact">
+            <div class="titre-contact">
+                <h2 class="contact">NOUS CONTACTER</h2>
+            </div>
+            
+          <div class="coordonnee-grp">
+            
+            <div class="coordonnees">
+              <h2 class="coordonnees">Nos coordonnées</h2>
+                <p class="coordonnees">
+                    CENTRE NICE AFPA <br>
+                    Adresse : 244, route de Turin <br>
+                    CP : 06300 <br>
+                    Ville : Nice
+                </p>
+            </div>
+
+            <div class="map">
+              <!-- Ce n'est pas une image, c'est le lien pour la map google !-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.166963305936!2d7.282091751406027!3d43.72785827901634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc540fd3af7fb%3A0x6c3772b6ed6e43f6!2s244%20Rte%20de%20Turin%2C%2006300%20Nice!5e0!3m2!1sfr!2sfr!4v1652524188939!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+            
+            <div class="votre-contact">
+                <h2 class="contact-conseiller">Votre contact</h2>
+                <p class="contact-conseiller">
+                    Nom : Hézard <br>
+                    Prénom : Benoit <br>
+                    Tél : 04 93 27 63 00 <br>
+                    <a href="mailto:benoit.hezard@afpa.fr?subject=Sujet-du-message">benoit.hezard@afpa.fr</a>
+                </p>
+            </div>
+          </div>
+        </section>
+        <!--Fin de section contact-->
+
+    </main>
+
+    <!--Pied de page-->
+    <footer >
+        <div class="logo-footer">
+           <img src="./assets/images/logo_footer_afpa.png.jpg" alt="logo-afpa"> 
+          <img src="./assets/images/logo_europe_footer.jpg" alt="logo-euro">
+        </div>
+
+
+<div class="lien-grp">
+        <div class="lien-footer">
+            <ul class="footer">
+                <li><a href="https://www.afpa.fr/actualites/politique-des-acha-1">Fournisseur</a></li>
+                <li><a href="https://www.afpa.fr/documents/21653/0/CGV-2021.pdf/5ec1a4aa-17e4-832b-2c74-48c29f2f83c0">CGV</a></li>
+                <li><a href="https://www.afpa.fr/actualites/reglementation-interieur-stagiaire">Règlement intérieur stagiaires</a></li>
+                <li><a href="https://www.afpa.fr/documents/21653/11788378/20200511_NoteRIS_Covid19.pdf/beeeca26-92c1-4586-b670-8043018d57a5">Règlement covid 19</a></li>
+                <li><a href="https://www.afpa.fr/particulier/votre-experience-afpa-nous-contacter/conta-1">Nous contacter</a></li>
+                <li><a href="https://www.afpa.fr/actualites/reclamations">Réclamations</a></li>
+                <li><a href="https://www.afpa.fr/actualites/conformite-de-nos-prestations">Conformité</a></li>
+            </ul>
+        </div>
+
+        <div class="lien-footer2">
+            <ul class="footer">
+                <li><a href="https://www.afpa.fr/actualites/politique-de-protection-des-donnees-a-caractere-personnel">Politique de protection des données</a></li>
+                <li><a href="https://www.afpa.fr/actualites/politique-de-gestion-des-cookies">Cookies</a></li>
+                <li><a href="https://www.afpa.fr/actualites/cgu">CGU</a></li>
+                <li><a href="https://www.afpa.fr/actualites/mentions-legal-1">Mentions légales</a></li>
+            </ul>
+        </div>
+
+      </div>
+        
+        <p class="footer">&copy; 2022 - Afpa - Tout droit réservé</p>
+    </footer>
+    <!--Fin de pied page-->
+    
+</body>
+</html>
